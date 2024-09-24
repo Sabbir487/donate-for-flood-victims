@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ-blog</title>
+    <!-- Lexend Font CDN Start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- daisyUI CDN instalation -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- Tailwind CDN instalation -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom Them Added -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#B4F461',
+                        secondary: 'rgba(17, 17, 17, 0.7)',
+                        background: 'rgba(17, 17, 17, 0.05)',
+                        grayi: 'rgba(17, 17, 17, 0.7)',
+                    },
+                    fontFamily: {
+                        Lexend: "Lexend",
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- navber container section style start -->
+    <header class="bg-[#F9F7F3] pb-4">
+        <!-- navigation bar container style star -->
+        <nav class="navbar lg:w-10/12 mx-auto pt-6">
+            <div class="navbar-start">
+                <button class="bg-primary px-8 text-center font-semibold text-xl btn">Home</button>
+            </div>
+            <div class="navbar-center md:flex hidden">
+                <img src="images/logo.png" alt="">
+                <span class="font-semibold text-xl ml-4">Donate Bangladesh</span>
+            </div>
+            <div class="navbar-end">
+                <img src="images/coin.png" alt="">
+                <p class="font-semibold text-xl text-secondary ml-3"><span>7000 </span>BDT</p>
+            </div>
+        </nav>
+        <!-- navigation bar container style end -->
+    </header>
+    <!-- navber container section style end -->
+    <!-- main container section style start -->
+    <main class="lg:w-10/12 w-11/12 mx-auto md:pt-14 pt-10">
+        <!-- Imortant FAQ Section Style Start -->
+        <section>
+            <h1 class="md:font-extrabold md:text-4xl font-bold text-2xl">Important FAQ <i
+                    class="fa-solid fa-question"></i>
+            </h1>
+            <article class="join pt-10 join-vertical w-full">
+                <div class="collapse  md:p-5 collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <h2 class="collapse-title md:text-xl font-bold text-base">What is the Document Model
+                        (DOM)?</h2>
+                    <div class="collapse-content">
+                        <p class="text-grayi md:text-base text-sm">The Document Object Model (DOM) is a programming
+                            interface that allows developers to interact
+                            with and manipulate web documents, such as HTML and XML. It represents the document as a
+                            structured tree of objects, where each node corresponds to different parts of the
+                            document, like elements, attributes, and text.
+                            <br>
+                            <span class="md:text-lg text-base text-gray-700 font-semibold">Key Features of the
+                                DOM:</span>
+                            <br>
+                        <ol class="text-grayi md:text-base text-sm">
+                            <li>1. Dynamic Manipulation: It enables real-time updates to the content and structure of a
+                                webpage. Developers can add,
+                                modify, or delete elements using JavaScript.</li>
+                            <li>2. Event Handling: The DOM provides a way to respond to user interactions, such as
+                                clicks
+                                or key presses, allowing for interactive web experiences.</li>
+                            <li>3. Standardization: The DOM is defined by standards set by the World Wide Web Consortium
+                                (W3C), ensuring compatibility
+                                across different web browsers.</li>
+                            <li>4. Language Flexibility: While primarily used with JavaScript, the DOM can also be
+                                manipulated using other programming
+                                languages.</li>
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+                <div class="collapse md:p-5 collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <h2 class="collapse-title md:text-xl font-bold text-base">How do you select an element from the DOM?
+                    </h2>
+                    <div class="collapse-content">
+                        <p class="text-grayi md:text-base text-sm">JavaScript provides several methods to select DOM
+                            elements. Here
+                            are some
+                            of them:
+                            <br>
+                            <span class="md:text-lg text-base text-gray-700 font-semibold">1. Using
+                                getElementById:</span>
+                            <br>
+                            The getElementById method allows you to select an element by its ID. This method returns the
+                            element object if it finds an element with the specified ID, otherwise, it returns null.
+                            <br>
+                            <span class="md:text-lg text-base text-gray-700 font-semibold">2. Using
+                                getElementsByClassName:</span>
+                            <br>
+                            The getElementsByClassName method allows you to select elements by their class name. It
+                            returns a collection of all
+                            elements in the document with the specified class name.
+                            <br>
+                            <span class="md:text-lg text-base text-gray-700 font-semibold">3. Using
+                                getElementsByTagName:</span>
+                            <br>
+                            The getElementsByTagName method allows you to select elements by their tag name. It returns
+                            a collection of all elements in the document with the specified tag name.
+                            <br>
+                            <span class="md:text-lg text-base text-gray-700 font-semibold">4. Using
+                                querySelector:</span>
+                            <br>
+                            The querySelector method allows you to select the first element that matches a specified CSS
+                            selector(s) in the document.
+                            <br>
+                            <span class="md:text-lg text-base text-gray-700 font-semibold">5. Using
+                                querySelectorAll:</span>
+                            <br>
+                            The querySelectorAll method allows you to select all elements that match a specified CSS
+                            selector(s) in the document.
+                        </p>
+                    </div>
+                </div>
+                <div class="collapse md:p-5 collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <h2 class="collapse-title md:text-xl font-bold text-base">What is event delegation in the context of
+                        the
+                        DOM, and why is useful?</h2>
+                    <div class="collapse-content">
+                        <p class="text-grayi md:text-base text-sm">Event delegation is a technique in the DOM that
+                            allows you to handle
+                            events for multiple
+                            child elements by attaching a single event listener to a parent element. Instead of adding
+                            individual listeners to each child, the parent listener captures events that bubble up from
+                            its children.
+                            <br>
+                            <span class="md:text-lg text-base text-gray-700 font-semibold">How It Works</span>
+                            <br>
+                            When an event occurs on a child element, it bubbles up through its parent elements until it
+                            reaches the top of the DOM
+                            tree. The parent listener can then identify the specific child element that triggered the
+                            event using the event.target
+                            property.
+                            <br>
+                            <span class="md:text-lg text-base text-gray-700 font-semibold">Benefits of Event
+                                Delegation</span>
+                            <br>
+                        <ol class="space-y-2 text-grayi md:text-base text-sm">
+                            <li>1. Improved Performance: Reduces the number of event listeners in the document, which is
+                                especially beneficial for pages
+                                with many elements, leading to better performance.</li>
+                            <li>2. Handles Dynamic Content: Works well with elements that are added or removed from the
+                                DOM after the initial page load, as
+                                the parent listener will automatically handle events for these new elements.</li>
+                            <li>3. Simpler Code: Reduces redundancy in your code by centralizing event handling, making
+                                it easier to read and maintain.</li>
+                            <li>4. Memory Efficiency: Fewer event listeners mean lower memory usage, which can be
+                                advantageous in larger applications.</li>
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+                <div class="collapse md:p-5 collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title md:text-xl font-bold text-base">How do you manipulate an element's
+                        attribute and
+                        styles using the DOM?</div>
+                    <div class="collapse-content">
+                        <p class="text-grayi md:text-base text-sm">The classList object only provide methods to change
+                            the class of an
+                            element. If you want to change other attributes like
+                            id , href , or src , you can use the setAttribute() method. The setAttribute() method
+                            accepts two arguments: The name of
+                            the attribute to set.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- Imortant FAQ Section Style end -->
+    </main>
+    <!-- main container section style end -->
+    <!-- footer container section style start -->
+    <footer class="bg-[#F9F7F3] md:mt-20 mt-10">
+        <p class="md:py-10 py-5 text-xs md:text-base text-center">Copyright © 2024 - All right reserved By <ins>R S T
+                Sabbir</ins>
+        </p>
+    </footer>
+    <!-- footer container section style end -->
+</body>
+
+</html>
